@@ -36,6 +36,7 @@
   },
   "scripts": {
     "start": "./bin/shuburi-report-webapp",
+    "worker": "./bin/shuburi-report",
     "test": "exit 0"
   }
 }
