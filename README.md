@@ -2,10 +2,32 @@
 
 shuburi-report
 
-# Heroku Button
+# Deployment
+
+## 1. Press Heroku button
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+## 2. Set environment variables
+
+[Create new Twitter app](https://apps.twitter.com/) and retrieve following values:
+
+- Consumer Key (API Key)
+- Consumer Secret (API Secret)
+- Access Token
+- Access Token Secret
+
+## 3. Add job in Heroku Scheduler console
+
+ TASK             | DYNO | FREQUENCY
+------------------|------|-----------
+ $ npm run worker | 1X   | Daily
+
+## 4. keep alive settings (optional)
+
+You need to send a HTTP request every 10 minutes.
+
+e.g. [Uptime Robot](https://uptimerobot.com/) or [pingdom](https://www.pingdom.com/) or [New Relic](http://newrelic.com/).
 
 # License
 
@@ -18,4 +40,3 @@ shuburi-report
 [bouzuya]: https://github.com/bouzuya/
 [email]: mailto:m@bouzuya.net
 [url]: http://bouzuya.net
-
