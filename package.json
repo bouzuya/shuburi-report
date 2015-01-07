@@ -24,6 +24,9 @@
     "request-b": "^1.1.0"
   },
   "devDependencies": {},
+  "engines": {
+    "node": "0.10.x"
+  },
   "homepage": "https://github.com/bouzuya/shuburi-report",
   "keywords": [
     "shuburi"
@@ -36,7 +39,7 @@
   },
   "scripts": {
     "start": "./bin/shuburi-report-webapp",
-    "worker": "./bin/shuburi-report",
-    "test": "exit 0"
+    "test": "exit 0",
+    "worker": "./bin/shuburi-report"
   }
 }
