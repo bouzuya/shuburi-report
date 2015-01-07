@@ -1,0 +1,28 @@
+{
+  "name": "shuburi-report",
+  "description": "shuburi-report",
+  "keywords": [
+    "shuburi"
+  ],
+  "website": "https://github.com/bouzuya/shuburi-report",
+  "repository": "https://github.com/bouzuya/shuburi-report",
+  "env": {
+    "TWITTER_CONSUMER_KEY": {
+      "description": "The Twitter consume key to update the bouzuya's status"
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "description": "The Twitter consume secret to update the bouzuya's status"
+    },
+    "TWITTER_ACCESS_TOKEN": {
+      "description": "The Twitter access token to update the bouzuya's status"
+    },
+    "TWITTER_ACCESS_TOKEN_SECRET": {
+      "description": "The Twitter access token secret to update the bouzuya's status"
+    }
+  },
+  "addons": [
+    "scheduler"
+  ]
+}
+
+

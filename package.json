@@ -1,0 +1,41 @@
+{
+  "name": "shuburi-report",
+  "description": "shuburi-report",
+  "version": "0.1.0",
+  "author": {
+    "name": "bouzuya",
+    "mail": "m@bouzuya.net",
+    "url": "http://bouzuya.net"
+  },
+  "bin": {
+    "shuburi-report": "./bin/shuburi-report",
+    "shuburi-report-webapp": "./bin/shuburi-report-webapp"
+  },
+  "bugs": {
+    "url": "https://github.com/bouzuya/shuburi-report/issues"
+  },
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "es6-promise": "^2.0.1",
+    "express": "^4.10.7",
+    "github": "^0.2.3",
+    "moment": "^2.8.4",
+    "request": "https://github.com/request/request/archive/master.tar.gz",
+    "request-b": "^1.1.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/bouzuya/shuburi-report",
+  "keywords": [
+    "shuburi"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bouzuya/shuburi-report"
+  },
+  "scripts": {
+    "start": "./bin/shuburi-report-webapp",
+    "test": "exit 0"
+  }
+}
