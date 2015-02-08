@@ -18,11 +18,21 @@
     },
     "TWITTER_ACCESS_TOKEN_SECRET": {
       "description": "The Twitter access token secret to update the bouzuya's status"
+    },
+    "AWS_S3_BUCKET": {
+      "description": "The bucket name to save data"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "The access key id to save data"
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "The secret access token to save data"
+    },
+    "AWS_REGION": {
+      "description": "The region to save data"
     }
   },
   "addons": [
     "scheduler"
   ]
 }
-
-
