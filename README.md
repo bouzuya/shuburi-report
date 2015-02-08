@@ -26,10 +26,11 @@ AWS credentials
 
 ## 3. Add job in Heroku Scheduler console
 
- TASK               | DYNO | FREQUENCY
---------------------|------|------------------
- $ npm run worker   | 1X   | Daily
- $ npm run watcher  | 1X   | Every 10 minutes
+ TASK                | DYNO | FREQUENCY
+---------------------|------|------------------
+ $ npm run collector | 1X   | Daily
+ $ npm run watcher   | 1X   | Every 10 minutes
+ $ npm run worker    | 1X   | Daily
 
 ## 4. keep alive settings (optional)
 
