@@ -11,7 +11,6 @@ describe('File', function() {
     this.sinon.restore();
   });
 
-  describe.skip('.exists', function() {});
   describe.skip('.read', function() {});
   describe.skip('.write', function() {});
 });
