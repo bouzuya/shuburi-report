@@ -45,6 +45,7 @@
   "scripts": {
     "start": "./bin/shuburi-report-webapp",
     "test": "mocha --require intelli-espower-loader",
+    "watcher": "./bin/shuburi-report watch",
     "worker": "./bin/shuburi-report"
   }
 }

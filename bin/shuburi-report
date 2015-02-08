@@ -2,5 +2,4 @@
 
 var CLI = require('../lib/cli').CLI;
 var cli = new CLI();
-cli.run();
-
+cli.run(process.argv[2]);
