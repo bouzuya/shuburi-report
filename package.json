@@ -45,6 +45,7 @@
     "url": "https://github.com/bouzuya/shuburi-report"
   },
   "scripts": {
+    "collector": "./bin/shuburi-report collect",
     "start": "./bin/shuburi-report-webapp",
     "test": "mocha --require intelli-espower-loader",
     "watcher": "./bin/shuburi-report watch",
