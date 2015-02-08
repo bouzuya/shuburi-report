@@ -20,6 +20,7 @@
     "express": "^4.10.7",
     "github": "^0.2.3",
     "moment": "^2.8.4",
+    "mustache": "^1.0.0",
     "request": "https://github.com/request/request/archive/master.tar.gz",
     "request-b": "^1.1.0"
   },
