@@ -29,8 +29,8 @@ AWS credentials
  TASK                | DYNO | FREQUENCY
 ---------------------|------|------------------
  $ npm run collector | 1X   | Daily
+ $ npm run notifier  | 1X   | Daily
  $ npm run watcher   | 1X   | Every 10 minutes
- $ npm run worker    | 1X   | Daily
 
 ## 4. keep alive settings (optional)
 
