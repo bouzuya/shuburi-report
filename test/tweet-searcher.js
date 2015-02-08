@@ -45,6 +45,10 @@ describe('TweetSearcher', function() {
     });
   });
 
+  describe.skip('#load', function() {});
+
+  describe.skip('#save', function() {});
+
   describe('#search', function() {
     context('[], []', function() {
       beforeEach(function() {
