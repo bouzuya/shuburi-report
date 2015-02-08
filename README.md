@@ -17,11 +17,19 @@ shuburi-report
 - Access Token
 - Access Token Secret
 
+AWS credentials
+
+- AWS_S3_BUCKET
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- AWS_REGION
+
 ## 3. Add job in Heroku Scheduler console
 
- TASK             | DYNO | FREQUENCY
-------------------|------|-----------
- $ npm run worker | 1X   | Daily
+ TASK               | DYNO | FREQUENCY
+--------------------|------|------------------
+ $ npm run worker   | 1X   | Daily
+ $ npm run watcher  | 1X   | Every 10 minutes
 
 ## 4. keep alive settings (optional)
 
