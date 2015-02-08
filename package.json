@@ -46,6 +46,7 @@
   },
   "scripts": {
     "collector": "./bin/shuburi-report collect",
+    "notifier": "./bin/shuburi-report notify",
     "start": "./bin/shuburi-report-webapp",
     "test": "mocha --require intelli-espower-loader",
     "watcher": "./bin/shuburi-report watch",
