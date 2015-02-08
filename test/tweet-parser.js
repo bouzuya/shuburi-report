@@ -1,9 +1,15 @@
 var assert = require('power-assert');
+var sinon = require('sinon');
 var TweetParser = require('../lib/tweet-parser').TweetParser;
 
 describe('TweetParser', function() {
   beforeEach(function() {
     this.parser = new TweetParser();
+    this.sinon = sinon.sandbox.create();
+  });
+
+  afterEach(function() {
+    this.sinon.restore();
   });
 
   describe('#parseMessage', function() {
