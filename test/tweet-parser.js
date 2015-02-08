@@ -12,6 +12,46 @@ describe('TweetParser', function() {
     this.sinon.restore();
   });
 
+  describe('#parse', function() {
+    context('when valid message', function() {
+      beforeEach(function() {
+        this.sinon.stub(this.parser, 'parseMessage', function() {
+          return { week: '2015-W01', user: 'bouzuya', repo: 'hspd-api' };
+        });
+        this.tweet = {
+          user: {
+            id_str: '123456789',
+            screen_name: 'bouzuya'
+          }
+        };
+      });
+
+      it('contains twitter_{user_id,user_screen_name}', function() {
+        var result = this.parser.parse(this.tweet);
+        assert(result.twitter_user_id === '123456789');
+        assert(result.twitter_user_screen_name === 'bouzuya');
+      });
+    });
+
+    context('when invalid message', function() {
+      beforeEach(function() {
+        this.sinon.stub(this.parser, 'parseMessage', function() {
+          return null;
+        });
+        this.tweet = {
+          user: {
+            id_str: '123456789',
+            screen_name: 'bouzuya'
+          }
+        };
+      });
+
+      it('returns null', function() {
+        assert(this.parser.parse(this.tweet) === null);
+      });
+    });
+  });
+
   describe('#parseMessage', function() {
     beforeEach(function() {
       this.data = [
