@@ -29,6 +29,22 @@ describe('TweetSearcher', function() {
     this.sinon.restore();
   });
 
+  describe('#constructor', function() {
+    context('without args', function() {
+      it('works', function() {
+        var searcher = new TweetSearcher();
+        assert(searcher.sinceId === null);
+      });
+    });
+
+    context('with { sinceId: "123" }', function() {
+      it('works', function() {
+        var searcher = new TweetSearcher({ sinceId: '123' });
+        assert(searcher.sinceId === '123');
+      });
+    });
+  });
+
   describe('#search', function() {
     context('[], []', function() {
       beforeEach(function() {
