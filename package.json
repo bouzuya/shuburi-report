@@ -24,7 +24,11 @@
     "request": "https://github.com/request/request/archive/master.tar.gz",
     "request-b": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "intelli-espower-loader": "^0.6.0",
+    "mocha": "^2.1.0",
+    "power-assert": "^0.10.1"
+  },
   "engines": {
     "node": "0.10.x"
   },
@@ -40,7 +44,7 @@
   },
   "scripts": {
     "start": "./bin/shuburi-report-webapp",
-    "test": "exit 0",
+    "test": "mocha --require intelli-espower-loader",
     "worker": "./bin/shuburi-report"
   }
 }
