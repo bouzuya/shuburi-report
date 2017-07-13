@@ -29,9 +29,6 @@
     "power-assert": "^0.10.1",
     "sinon": "^1.12.2"
   },
-  "engines": {
-    "node": "0.10.x"
-  },
   "homepage": "https://github.com/bouzuya/shuburi-report",
   "keywords": [
     "shuburi"
